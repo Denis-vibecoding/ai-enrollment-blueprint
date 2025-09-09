@@ -71,6 +71,17 @@ const CheckoutPage = () => {
           >
             🚀 CLAIM YOUR SPOT NOW - ONLY {25 - 17} LEFT!
           </Button>
+          
+          {/* Money Back Guarantee */}
+          <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 max-w-2xl mx-auto border border-white/20">
+            <div className="flex items-center justify-center gap-3 mb-4">
+              <Shield className="w-8 h-8 text-white" />
+              <h3 className="text-2xl font-bold text-white">30-Day Results Guarantee</h3>
+            </div>
+            <p className="text-white/90 text-lg text-center leading-relaxed">
+              Follow the program, attend the coaching calls, and implement what you learn. If you don't land your first paying client within 30 days, we'll give you a complete refund. No questions asked.
+            </p>
+          </div>
         </div>
       </section>
 
