@@ -5,7 +5,6 @@ import { CheckCircle, Shield, Star, ExternalLink } from "lucide-react";
 import CountdownTimer from "@/components/CountdownTimer";
 import homedesignsLogo from "@/assets/homedesigns-logo.png";
 import guaranteeSeal from "@/assets/guarantee-seal.jpg";
-
 const CheckoutPage = () => {
   const handleFastSpringCheckout = (paymentType: 'full' | 'plan') => {
     // FastSpring popup integration
@@ -16,11 +15,7 @@ const CheckoutPage = () => {
     };
 
     // Open FastSpring checkout in a popup
-    const popup = window.open(
-      productUrls[paymentType],
-      'FastSpringCheckout',
-      'width=800,height=600,scrollbars=yes,resizable=yes'
-    );
+    const popup = window.open(productUrls[paymentType], 'FastSpringCheckout', 'width=800,height=600,scrollbars=yes,resizable=yes');
 
     // Optional: Listen for popup completion
     const checkClosed = setInterval(() => {
@@ -31,13 +26,11 @@ const CheckoutPage = () => {
       }
     }, 1000);
   };
-
-  return (
-    <div className="min-h-screen bg-white">
+  return <div className="min-h-screen bg-white">
       {/* Scarcity Banner */}
-      <div className="bg-gradient-subtle border-b border-border text-center py-4 px-4">
+      <div className="bg-warning text-warning-foreground text-center py-3 px-4">
         <div className="max-w-4xl mx-auto">
-          <span className="font-semibold text-primary">⚠️ NOTICE: Enrollment is strictly limited to the first 25 Founding Members - This page will expire once 25 students enroll</span>
+          <span className="font-semibold">📢 This exclusive offer disappears when the countdown hits zero!</span>
         </div>
       </div>
 
@@ -55,20 +48,15 @@ const CheckoutPage = () => {
       <section className="bg-gradient-hero py-20 px-4 text-center text-white relative overflow-hidden">
         {/* Background decorative elements */}
         <div className="absolute inset-0 bg-gradient-hero opacity-90"></div>
-        <div 
-          className="absolute inset-0 opacity-50"
-          style={{
-            backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Ccircle cx='30' cy='30' r='2'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`
-          }}
-        ></div>
+        <div className="absolute inset-0 opacity-50" style={{
+        backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Ccircle cx='30' cy='30' r='2'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`
+      }}></div>
         
         <div className="max-w-4xl mx-auto relative z-10 space-y-8">
           <h1 className="text-5xl lg:text-6xl font-bold leading-tight">
             Yes! You're In. Complete Your Enrollment Below.
           </h1>
-          <p className="text-xl lg:text-2xl opacity-90 max-w-3xl mx-auto">
-            You're just 60 seconds away from getting the proven system to generate high-ticket clients on demand.
-          </p>
+          <p className="text-xl lg:text-2xl opacity-90 max-w-3xl mx-auto">You're one step away from getting the AI-powered system, the expert coaching, and the tools to land your first high-ticket design client.</p>
           
           <CountdownTimer />
           
@@ -114,12 +102,7 @@ const CheckoutPage = () => {
                     </div>
                   </div>
                 </div>
-                <Button 
-                  variant="premium" 
-                  size="lg" 
-                  className="w-full text-lg py-4"
-                  onClick={() => handleFastSpringCheckout('full')}
-                >
+                <Button variant="premium" size="lg" className="w-full text-lg py-4" onClick={() => handleFastSpringCheckout('full')}>
                   ENROLL NOW
                   <ExternalLink className="w-5 h-5 ml-2" />
                 </Button>
@@ -136,12 +119,7 @@ const CheckoutPage = () => {
                 <div className="h-20 flex items-center justify-center">
                   <p className="text-muted-foreground">Spread the cost over 3 months</p>
                 </div>
-                <Button 
-                  variant="checkout" 
-                  size="lg" 
-                  className="w-full text-lg py-4"
-                  onClick={() => handleFastSpringCheckout('plan')}
-                >
+                <Button variant="checkout" size="lg" className="w-full text-lg py-4" onClick={() => handleFastSpringCheckout('plan')}>
                   ENROLL NOW
                   <ExternalLink className="w-5 h-5 ml-2" />
                 </Button>
@@ -159,34 +137,27 @@ const CheckoutPage = () => {
             </CardHeader>
             <CardContent className="space-y-6">
               <div className="grid gap-4">
-                {[
-                  {
-                    title: "The Engine: The Complete HomeDesigns.AI Suite",
-                    subtitle: "(Lifetime PRO License + All Add-ons)",
-                    value: "$2,988"
-                  },
-                  {
-                    title: "The Sales Training: 30-Day Sales Coaching with Rahim",
-                    subtitle: "Weekly group coaching calls + private community access",
-                    value: "$1,497"
-                  },
-                  {
-                    title: "The Software Training: 30-Day Software Coaching with Sasha",
-                    subtitle: "Master every feature and advanced technique",
-                    value: "$997"
-                  },
-                  {
-                    title: "The AI Client Acquisition Engine",
-                    subtitle: "Rahim's proprietary playbook for building an automated client-getting system",
-                    value: "$1,497"
-                  },
-                  {
-                    title: "The Accelerators: Your complete vault of Done-For-You assets",
-                    subtitle: "Templates, prompts, contracts, and toolkits",
-                    value: "$997"
-                  }
-                ].map((item, index) => (
-                  <div key={index} className="flex items-start justify-between p-6 bg-gradient-subtle rounded-xl border border-premium/10">
+                {[{
+                title: "The Engine: The Complete HomeDesigns.AI Suite",
+                subtitle: "(Lifetime PRO License + All Add-ons)",
+                value: "$2,988"
+              }, {
+                title: "The Sales Training: 30-Day Sales Coaching with Rahim",
+                subtitle: "Weekly group coaching calls + private community access",
+                value: "$1,497"
+              }, {
+                title: "The Software Training: 30-Day Software Coaching with Sasha",
+                subtitle: "Master every feature and advanced technique",
+                value: "$997"
+              }, {
+                title: "The AI Client Acquisition Engine",
+                subtitle: "Rahim's proprietary playbook for building an automated client-getting system",
+                value: "$1,497"
+              }, {
+                title: "The Accelerators: Your complete vault of Done-For-You assets",
+                subtitle: "Templates, prompts, contracts, and toolkits",
+                value: "$997"
+              }].map((item, index) => <div key={index} className="flex items-start justify-between p-6 bg-gradient-subtle rounded-xl border border-premium/10">
                     <div className="flex items-start gap-4">
                       <CheckCircle className="w-6 h-6 text-success mt-1 flex-shrink-0" />
                       <div>
@@ -195,8 +166,7 @@ const CheckoutPage = () => {
                       </div>
                     </div>
                     <div className="font-bold text-premium text-lg">{item.value}</div>
-                  </div>
-                ))}
+                  </div>)}
               </div>
               
               <div className="border-t border-border pt-6">
@@ -218,11 +188,7 @@ const CheckoutPage = () => {
           <Card className="shadow-card bg-gradient-subtle border border-premium/20">
             <CardContent className="flex flex-col lg:flex-row items-center gap-8 p-12">
               <div className="flex-shrink-0">
-                <img 
-                  src={guaranteeSeal} 
-                  alt="30-Day Results Guarantee" 
-                  className="w-40 h-40 object-contain"
-                />
+                <img src={guaranteeSeal} alt="30-Day Results Guarantee" className="w-40 h-40 object-contain" />
               </div>
               <div className="text-center lg:text-left">
                 <h3 className="text-3xl font-bold text-primary mb-4">
@@ -248,9 +214,7 @@ const CheckoutPage = () => {
               <div className="grid md:grid-cols-2 gap-8">
                 <div className="bg-gradient-subtle p-8 rounded-xl">
                   <div className="flex items-center gap-2 mb-4">
-                    {[...Array(5)].map((_, i) => (
-                      <Star key={i} className="w-5 h-5 fill-premium text-premium" />
-                    ))}
+                    {[...Array(5)].map((_, i) => <Star key={i} className="w-5 h-5 fill-premium text-premium" />)}
                   </div>
                   <p className="text-foreground mb-6 text-lg italic leading-relaxed">
                     Within 2 weeks of joining the academy, I landed my first $3,000 client. The AI tools 
@@ -261,9 +225,7 @@ const CheckoutPage = () => {
                 
                 <div className="bg-gradient-subtle p-8 rounded-xl">
                   <div className="flex items-center gap-2 mb-4">
-                    {[...Array(5)].map((_, i) => (
-                      <Star key={i} className="w-5 h-5 fill-premium text-premium" />
-                    ))}
+                    {[...Array(5)].map((_, i) => <Star key={i} className="w-5 h-5 fill-premium text-premium" />)}
                   </div>
                   <p className="text-foreground mb-6 text-lg italic leading-relaxed">
                     The HomeDesigns.AI suite is a game-changer. I've generated over $15k in revenue 
@@ -282,20 +244,10 @@ const CheckoutPage = () => {
             <h3 className="text-3xl font-bold mb-4">Ready to Transform Your Design Business?</h3>
             <p className="text-xl mb-8 opacity-90">Join the first 25 founding members today</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center max-w-lg mx-auto">
-              <Button 
-                variant="premium" 
-                size="lg" 
-                className="text-lg py-4 px-8 bg-white text-primary hover:bg-white/90"
-                onClick={() => handleFastSpringCheckout('full')}
-              >
+              <Button variant="premium" size="lg" className="text-lg py-4 px-8 bg-white text-primary hover:bg-white/90" onClick={() => handleFastSpringCheckout('full')}>
                 Pay in Full - $997
               </Button>
-              <Button 
-                variant="outline" 
-                size="lg" 
-                className="text-lg py-4 px-8 border-white text-white hover:bg-white/10"
-                onClick={() => handleFastSpringCheckout('plan')}
-              >
+              <Button variant="outline" size="lg" className="text-lg py-4 px-8 border-white text-white hover:bg-white/10" onClick={() => handleFastSpringCheckout('plan')}>
                 Payment Plan - $397 x 3
               </Button>
             </div>
@@ -307,8 +259,6 @@ const CheckoutPage = () => {
           </div>
         </section>
       </div>
-    </div>
-  );
+    </div>;
 };
-
 export default CheckoutPage;
