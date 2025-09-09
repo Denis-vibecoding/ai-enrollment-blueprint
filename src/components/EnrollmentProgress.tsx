@@ -46,7 +46,7 @@ const EnrollmentProgress = ({ enrolled: initialEnrolled = 0, total = 25 }: Enrol
         // Show toast notification
         toast({
           title: "🎉 New Student Enrolled!",
-          description: `Only ${remaining} founding member spots remaining`,
+          description: `Only ${remaining} academy student spots remaining`,
           duration: 4000,
         });
         
@@ -62,7 +62,7 @@ const EnrollmentProgress = ({ enrolled: initialEnrolled = 0, total = 25 }: Enrol
       <div className="space-y-4">
         <div className="text-center">
           <div className="text-2xl font-bold text-white mb-1">
-            {enrolled} of {total} Founding Member Spots Taken
+            {enrolled} of {total} Academy Student Spots Taken
           </div>
           <div className="text-white/80 text-lg">
             Only {remaining} spots remaining!

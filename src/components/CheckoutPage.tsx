@@ -30,7 +30,7 @@ const CheckoutPage = () => {
       {/* Scarcity Banner */}
       <div className="bg-muted text-muted-foreground text-center py-3 px-4 border-b border-border">
         <div className="max-w-4xl mx-auto">
-          <span className="font-semibold">⚠️ NOTICE: Enrollment is strictly limited to the first 25 Founding Members - This page will expire once 25 students enroll</span>
+          <span className="font-semibold">⚠️ NOTICE: Enrollment is strictly limited to the first 25 Academy Students - This page will expire once 25 students enroll</span>
         </div>
       </div>
 
@@ -247,7 +247,7 @@ const CheckoutPage = () => {
         <section className="text-center space-y-8">
           <div className="bg-gradient-hero rounded-2xl p-12 text-white">
             <h3 className="text-3xl font-bold mb-4">Ready to Transform Your Design Business?</h3>
-            <p className="text-xl mb-8 opacity-90">Join the first 25 founding members today</p>
+            <p className="text-xl mb-8 opacity-90">Join the first 25 academy students today</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center max-w-lg mx-auto">
               <Button variant="premium" size="lg" className="text-lg py-4 px-8 bg-white text-primary hover:bg-white/90" onClick={() => handleFastSpringCheckout('full')}>
                 Pay in Full - $997
