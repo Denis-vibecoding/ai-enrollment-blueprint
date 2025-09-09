@@ -45,8 +45,7 @@ const CheckoutPage = () => {
       <header className="bg-white py-6 px-4">
         <div className="max-w-6xl mx-auto">
           <div className="flex items-center justify-center gap-3">
-            <img src={homedesignsLogo} alt="HomeDesigns.AI" className="w-8 h-8" />
-            <span className="text-2xl font-bold text-primary">HomeDesigns<span className="text-premium-light">AI</span></span>
+            <img src="/lovable-uploads/362990bd-de27-4cca-9aaf-4b66059df954.png" alt="HomeDesigns.AI" className="h-8" />
           </div>
         </div>
       </header>
