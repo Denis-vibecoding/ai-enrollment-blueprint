@@ -7,7 +7,7 @@ interface EnrollmentProgressProps {
   total?: number;
 }
 
-const EnrollmentProgress = ({ enrolled: initialEnrolled = 0, total = 25 }: EnrollmentProgressProps) => {
+const EnrollmentProgress = ({ enrolled: initialEnrolled = 0, total = 40 }: EnrollmentProgressProps) => {
   const [enrolled, setEnrolled] = useState(initialEnrolled);
   const [hasStarted, setHasStarted] = useState(false);
   const { toast } = useToast();
@@ -25,15 +25,15 @@ const EnrollmentProgress = ({ enrolled: initialEnrolled = 0, total = 25 }: Enrol
   }, []);
 
   useEffect(() => {
-    if (!hasStarted || enrolled >= Math.floor(total * 0.92)) return; // Stop at 92% (23 students)
+    if (!hasStarted || enrolled >= Math.floor(total * 0.92)) return; // Stop at 92% (37 students)
 
     let interval: number;
     
-    // Phase 1: Rapid enrollment until 70% (17 students)
+    // Phase 1: Rapid enrollment until 70% (28 students)
     if (enrolled < Math.floor(total * 0.7)) {
       interval = Math.random() * 3000 + 2000; // 2-5 seconds (rapid)
     }
-    // Phase 2: Slower enrollment from 70% to 92% (17-23 students)
+    // Phase 2: Slower enrollment from 70% to 92% (28-37 students)
     else {
       interval = Math.random() * 7000 + 8000; // 8-15 seconds (slower)
     }
