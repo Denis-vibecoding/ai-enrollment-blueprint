@@ -159,25 +159,25 @@ const CheckoutPage = () => {
             <CardContent className="space-y-6">
               <div className="grid gap-4">
                 {[{
-                title: "The Engine: The Complete HomeDesigns.AI Suite",
-                subtitle: "(Lifetime PRO License + All Add-ons)",
-                value: "$2,988"
+                title: "#1 The Engine: HomeDesigns.AI Complete Suite – Lifetime License",
+                subtitle: "This is the complete software suite that will power your entire business, for life. It begins with the Lifetime PRO License to the core software, plus lifetime access to all powerful upgrades: the Premium+ Add-on, the Business+ Add-on, and the Unlimited Add-on. You get everything, with all future subscription fees waived, forever.",
+                value: "$2,997"
               }, {
-                title: "The Sales Training: 30-Day Sales Coaching with Rahim",
-                subtitle: "Weekly group coaching calls + private community access",
-                value: "$1,497"
+                title: "#2 The Sales Training: 30-Day Sales Coaching with Rahim",
+                subtitle: "This is a 30-day intensive with one live, group coaching session held each week with Rahim. These sessions are focused on client acquisition, pricing, and proposals to help you land your first clients. This also includes direct access to Rahim and other students in the private Academy members-only group, plus all session recordings and exclusive resources.",
+                value: "$4,997"
               }, {
-                title: "The Software Training: 30-Day Software Coaching with Sasha",
-                subtitle: "Master every feature and advanced technique",
-                value: "$997"
+                title: "#3 The Software Training: 30-Day Software Coaching with Sasha",
+                subtitle: "This is a 30-day technical training with one live, group software workshop held each week with Sasha, the HomeDesigns.AI Product Lead. These sessions are designed to help you master the tool, workflows, and advanced features. You'll get access to the private Academy group for support, plus all session recordings and extra resources.",
+                value: "$1,997"
               }, {
-                title: "The AI Client Acquisition Engine",
-                subtitle: "Rahim's proprietary playbook for building an automated client-getting system",
-                value: "$1,497"
+                title: "#4 The AI Client Acquisition Engine",
+                subtitle: "Rahim's proprietary automated system that uses multiple AI tools to find, qualify, and contact high-value clients for you.",
+                value: "$2,497"
               }, {
-                title: "The Accelerators: Your complete vault of Done-For-You assets",
-                subtitle: "Templates, prompts, contracts, and toolkits",
-                value: "$997"
+                title: "#5 The Accelerators: Complete Vault of \"Done-For-You\" Assets",
+                subtitle: "A complete vault of \"done-for-you\" assets to ensure you get results fast, which includes: Client Magnet Template Vault ($1,497), AI Redesign Prompt Library ($897), The Instant Expert Toolkit ($497), The Launch-Week Sprint Board ($397), Lifetime Updates ($467)",
+                value: "$3,755"
               }].map((item, index) => <div key={index} className="flex items-start justify-between p-6 bg-gradient-subtle rounded-xl border border-premium/10">
                     <div className="flex items-start gap-4">
                       <CheckCircle className="w-6 h-6 text-success mt-1 flex-shrink-0" />
@@ -193,7 +193,7 @@ const CheckoutPage = () => {
               <div className="border-t border-border pt-6">
                 <div className="flex justify-between items-center text-xl">
                   <span className="font-bold text-primary">Total Value:</span>
-                  <span className="text-2xl font-bold text-premium">$7,976</span>
+                  <span className="text-2xl font-bold text-premium">$16,243</span>
                 </div>
                 <div className="flex justify-between items-center text-2xl mt-2">
                   <span className="font-bold text-primary">Your Investment Today:</span>
