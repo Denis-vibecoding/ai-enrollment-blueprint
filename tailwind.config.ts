@@ -31,6 +31,7 @@ export default {
           DEFAULT: "hsl(var(--premium))",
           foreground: "hsl(var(--premium-foreground))",
           muted: "hsl(var(--premium-muted))",
+          light: "hsl(var(--premium-light))",
         },
         success: {
           DEFAULT: "hsl(var(--success))",
@@ -74,9 +75,10 @@ export default {
         },
       },
       backgroundImage: {
+        'gradient-primary': 'var(--gradient-primary)',
         'gradient-premium': 'var(--gradient-premium)',
-        'gradient-gold': 'var(--gradient-gold)',
         'gradient-subtle': 'var(--gradient-subtle)',
+        'gradient-hero': 'var(--gradient-hero)',
       },
       boxShadow: {
         'premium': 'var(--shadow-premium)',

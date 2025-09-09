@@ -17,52 +17,55 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 222 84% 4.9%;
 
-    /* Professional navy blue for trust and authority */
-    --primary: 220 60% 12%;
+    /* HomeDesigns.AI purple brand colors */
+    --primary: 263 70% 50%;
     --primary-foreground: 0 0% 98%;
+    --primary-light: 263 70% 65%;
 
-    --secondary: 210 40% 96%;
-    --secondary-foreground: 220 60% 12%;
+    --secondary: 240 5% 96%;
+    --secondary-foreground: 240 6% 10%;
 
-    --muted: 210 40% 96%;
-    --muted-foreground: 215 16% 47%;
+    --muted: 240 5% 96%;
+    --muted-foreground: 240 4% 46%;
 
-    --accent: 210 40% 96%;
-    --accent-foreground: 220 60% 12%;
+    --accent: 263 70% 95%;
+    --accent-foreground: 263 70% 50%;
 
-    /* Premium gold for best value highlighting */
-    --premium: 43 74% 49%;
+    /* Premium purple gradient for best value */
+    --premium: 263 70% 50%;
     --premium-foreground: 0 0% 98%;
-    --premium-muted: 43 74% 95%;
+    --premium-muted: 263 70% 95%;
+    --premium-light: 277 85% 65%;
 
-    /* Success green for checkmarks and guarantees */
+    /* Success green for checkmarks */
     --success: 142 76% 36%;
     --success-foreground: 0 0% 98%;
     --success-muted: 142 76% 95%;
 
-    /* Warning for scarcity */
-    --warning: 21 90% 48%;
+    /* Orange for urgency/scarcity */
+    --warning: 25 95% 53%;
     --warning-foreground: 0 0% 98%;
-    --warning-muted: 21 90% 95%;
+    --warning-muted: 25 95% 95%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 214 32% 91%;
-    --input: 214 32% 91%;
-    --ring: 220 60% 12%;
+    --border: 240 6% 90%;
+    --input: 240 6% 90%;
+    --ring: 263 70% 50%;
 
-    /* Custom gradients for premium feel */
-    --gradient-premium: linear-gradient(135deg, hsl(220 60% 12%), hsl(220 60% 18%));
-    --gradient-gold: linear-gradient(135deg, hsl(43 74% 49%), hsl(43 74% 55%));
-    --gradient-subtle: linear-gradient(180deg, hsl(0 0% 100%), hsl(210 40% 98%));
+    /* HomeDesigns.AI brand gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(263 70% 50%), hsl(277 85% 65%));
+    --gradient-premium: linear-gradient(135deg, hsl(263 70% 50%), hsl(277 85% 65%));
+    --gradient-subtle: linear-gradient(180deg, hsl(0 0% 100%), hsl(263 70% 98%));
+    --gradient-hero: linear-gradient(135deg, hsl(263 70% 50% / 0.9), hsl(277 85% 65% / 0.9));
 
-    /* Shadows for depth */
-    --shadow-premium: 0 20px 40px -12px hsl(220 60% 12% / 0.25);
-    --shadow-card: 0 4px 20px -4px hsl(220 60% 12% / 0.1);
-    --shadow-glow: 0 0 0 1px hsl(43 74% 49% / 0.3);
+    /* Modern shadows */
+    --shadow-premium: 0 25px 50px -12px hsl(263 70% 50% / 0.25);
+    --shadow-card: 0 4px 24px -4px hsl(263 70% 50% / 0.1);
+    --shadow-glow: 0 0 0 1px hsl(263 70% 50% / 0.4);
 
-    /* Animation timing */
+    /* Smooth transitions */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 
     --radius: 0.5rem;
