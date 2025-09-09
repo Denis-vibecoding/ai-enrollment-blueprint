@@ -1,13 +1,53 @@
 import { Progress } from "@/components/ui/progress";
+import { useEffect, useState } from "react";
+import { useToast } from "@/hooks/use-toast";
 
 interface EnrollmentProgressProps {
   enrolled?: number;
   total?: number;
 }
 
-const EnrollmentProgress = ({ enrolled = 17, total = 25 }: EnrollmentProgressProps) => {
+const EnrollmentProgress = ({ enrolled: initialEnrolled = 17, total = 25 }: EnrollmentProgressProps) => {
+  const [enrolled, setEnrolled] = useState(initialEnrolled);
+  const [hasStarted, setHasStarted] = useState(false);
+  const { toast } = useToast();
+  
   const percentage = (enrolled / total) * 100;
   const remaining = total - enrolled;
+
+  useEffect(() => {
+    // Start the enrollment simulation after 10 seconds
+    const startTimer = setTimeout(() => {
+      setHasStarted(true);
+    }, 10000);
+
+    return () => clearTimeout(startTimer);
+  }, []);
+
+  useEffect(() => {
+    if (!hasStarted || enrolled >= total) return;
+
+    // Simulate enrollment every 15-45 seconds
+    const enrollmentInterval = setInterval(() => {
+      if (enrolled < total) {
+        setEnrolled(prev => {
+          const newCount = prev + 1;
+          const remaining = total - newCount;
+          
+          // Show toast notification
+          toast({
+            title: "🎉 New Student Enrolled!",
+            description: `Only ${remaining} founding member spots remaining`,
+            duration: 4000,
+          });
+          
+          return newCount;
+        });
+      }
+    }, Math.random() * 30000 + 15000); // 15-45 seconds
+
+    return () => clearInterval(enrollmentInterval);
+  }, [hasStarted, enrolled, total, toast]);
 
   return (
     <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 max-w-lg mx-auto border border-white/20">
