@@ -60,18 +60,23 @@ const CheckoutPage = () => {
           
           <EnrollmentProgress />
           
-          <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-4 max-w-md mx-auto border border-white/20">
-            <div className="flex items-center justify-center gap-2 text-sm">
-              <img src="https://d1f8f9xcsvx3ha.cloudfront.net/sbl/0x171DA4/assets/checkout/fastspring-logo-white.svg" alt="FastSpring" className="h-4" />
-              <span className="text-white/80">Secure Checkout</span>
-            </div>
-          </div>
+          <Button 
+            variant="premium" 
+            size="lg" 
+            className="text-xl py-6 px-12 bg-white text-primary hover:bg-white/90 shadow-elegant animate-pulse font-bold"
+            onClick={() => {
+              const pricingSection = document.querySelector('[data-pricing-section]');
+              pricingSection?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }}
+          >
+            🚀 CLAIM YOUR SPOT NOW - ONLY {25 - 17} LEFT!
+          </Button>
         </div>
       </section>
 
       <div className="max-w-5xl mx-auto px-4 py-16 space-y-16">
         {/* Payment Options */}
-        <section className="text-center space-y-12">
+        <section className="text-center space-y-12" data-pricing-section>
           <div className="space-y-4">
             <h2 className="text-4xl font-bold text-primary">Choose Your Payment Option</h2>
             <p className="text-muted-foreground text-lg">Select the option that works best for you</p>
