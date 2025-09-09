@@ -5,15 +5,23 @@ import { useToast } from "@/hooks/use-toast";
 interface EnrollmentProgressProps {
   enrolled?: number;
   total?: number;
+  onEnrollmentChange?: (enrolled: number) => void;
 }
 
-const EnrollmentProgress = ({ enrolled: initialEnrolled = 0, total = 40 }: EnrollmentProgressProps) => {
+const EnrollmentProgress = ({ enrolled: initialEnrolled = 0, total = 40, onEnrollmentChange }: EnrollmentProgressProps) => {
   const [enrolled, setEnrolled] = useState(initialEnrolled);
   const [hasStarted, setHasStarted] = useState(false);
   const { toast } = useToast();
   
   const percentage = (enrolled / total) * 100;
   const remaining = total - enrolled;
+
+  // Update parent when enrollment changes
+  useEffect(() => {
+    if (onEnrollmentChange) {
+      onEnrollmentChange(enrolled);
+    }
+  }, [enrolled, onEnrollmentChange]);
 
   useEffect(() => {
     // Start the enrollment simulation after 10 seconds

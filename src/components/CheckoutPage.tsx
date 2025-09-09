@@ -5,7 +5,12 @@ import { CheckCircle, Shield, Star, ExternalLink } from "lucide-react";
 import EnrollmentProgress from "@/components/EnrollmentProgress";
 import homedesignsLogo from "@/assets/homedesigns-logo.png";
 import guaranteeSeal from "@/assets/guarantee-seal.jpg";
+import { useState, useEffect } from "react";
 const CheckoutPage = () => {
+  const [enrolled, setEnrolled] = useState(0);
+  const total = 40;
+  const remaining = total - enrolled;
+
   const handleFastSpringCheckout = (paymentType: 'full' | 'plan') => {
     // FastSpring popup integration
     // Replace these URLs with your actual FastSpring product URLs
@@ -58,7 +63,7 @@ const CheckoutPage = () => {
           </h1>
           <p className="text-xl lg:text-2xl opacity-90 max-w-3xl mx-auto">You're one step away from getting the AI-powered system, the expert coaching, and the tools to land your first high-ticket design client.</p>
           
-          <EnrollmentProgress />
+          <EnrollmentProgress enrolled={enrolled} total={total} onEnrollmentChange={setEnrolled} />
           
           <Button 
             variant="premium" 
@@ -69,7 +74,7 @@ const CheckoutPage = () => {
               pricingSection?.scrollIntoView({ behavior: 'smooth', block: 'start' });
             }}
           >
-            🚀 CLAIM YOUR SPOT NOW - ONLY {40 - 17} LEFT!
+            🚀 CLAIM YOUR SPOT NOW - ONLY {remaining} LEFT!
           </Button>
           
           {/* Money Back Guarantee */}
