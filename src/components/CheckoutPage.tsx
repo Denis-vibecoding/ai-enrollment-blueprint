@@ -28,9 +28,9 @@ const CheckoutPage = () => {
   };
   return <div className="min-h-screen bg-white">
       {/* Scarcity Banner */}
-      <div className="bg-warning text-warning-foreground text-center py-3 px-4">
+      <div className="bg-muted text-muted-foreground text-center py-3 px-4 border-b border-border">
         <div className="max-w-4xl mx-auto">
-          <span className="font-semibold">📢 This exclusive offer disappears when the countdown hits zero!</span>
+          <span className="font-semibold">⚠️ NOTICE: Enrollment is strictly limited to the first 25 Founding Members - This page will expire once 25 students enroll</span>
         </div>
       </div>
 
