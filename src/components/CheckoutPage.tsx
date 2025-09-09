@@ -5,7 +5,6 @@ import { CheckCircle, Shield, Star, ExternalLink } from "lucide-react";
 import EnrollmentProgress from "@/components/EnrollmentProgress";
 import homedesignsLogo from "@/assets/homedesigns-logo.png";
 import guaranteeBadge from "@/assets/guarantee-badge-modern.png";
-import paymentMethods from "@/assets/payment-methods.png";
 import { useState, useEffect } from "react";
 const CheckoutPage = () => {
   const [enrolled, setEnrolled] = useState(0);
@@ -128,8 +127,8 @@ const CheckoutPage = () => {
                   ENROLL NOW
                   <ExternalLink className="w-5 h-5 ml-2" />
                 </Button>
-                <div className="flex justify-center mt-4">
-                  <img src={paymentMethods} alt="Secure Payment Methods" className="h-8 opacity-80" />
+                <div className="flex justify-center mt-6">
+                  <img src="/lovable-uploads/52cd8a76-bb08-4e62-973f-e3be3d7a8175.png" alt="FastSpring Secure Checkout" className="max-w-full h-auto" style={{width: "320px"}} />
                 </div>
               </CardContent>
             </Card>
@@ -148,8 +147,8 @@ const CheckoutPage = () => {
                   ENROLL NOW
                   <ExternalLink className="w-5 h-5 ml-2" />
                 </Button>
-                <div className="flex justify-center mt-4">
-                  <img src={paymentMethods} alt="Secure Payment Methods" className="h-8 opacity-80" />
+                <div className="flex justify-center mt-6">
+                  <img src="/lovable-uploads/52cd8a76-bb08-4e62-973f-e3be3d7a8175.png" alt="FastSpring Secure Checkout" className="max-w-full h-auto" style={{width: "320px"}} />
                 </div>
               </CardContent>
             </Card>
