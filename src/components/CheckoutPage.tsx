@@ -4,7 +4,7 @@ import { Badge } from "@/components/ui/badge";
 import { CheckCircle, Shield, Star, ExternalLink } from "lucide-react";
 import EnrollmentProgress from "@/components/EnrollmentProgress";
 import homedesignsLogo from "@/assets/homedesigns-logo.png";
-import guaranteeSeal from "@/assets/guarantee-seal.jpg";
+import guaranteeBadge from "@/assets/guarantee-badge-modern.png";
 import { useState, useEffect } from "react";
 const CheckoutPage = () => {
   const [enrolled, setEnrolled] = useState(0);
@@ -239,7 +239,7 @@ const CheckoutPage = () => {
           <Card className="shadow-card bg-gradient-subtle border border-premium/20">
             <CardContent className="flex flex-col lg:flex-row items-center gap-8 p-12">
               <div className="flex-shrink-0">
-                <img src={guaranteeSeal} alt="30-Day Results Guarantee" className="w-40 h-40 object-contain" />
+                <img src={guaranteeBadge} alt="30-Day Results Guarantee" className="w-40 h-40 object-contain" />
               </div>
               <div className="text-center lg:text-left">
                 <h3 className="text-3xl font-bold text-primary mb-4">
