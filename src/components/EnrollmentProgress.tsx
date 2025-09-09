@@ -33,7 +33,7 @@ const EnrollmentProgress = ({ enrolled = 17, total = 25 }: EnrollmentProgressPro
         </div>
         
         <div className="text-center">
-          <div className="text-premium text-sm font-medium animate-pulse">
+          <div className="text-yellow-300 text-sm font-medium animate-pulse">
             🔥 {percentage >= 80 ? 'Almost full!' : 'Filling up fast!'}
           </div>
         </div>
