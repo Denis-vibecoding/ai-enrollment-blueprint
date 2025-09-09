@@ -7,7 +7,7 @@ interface EnrollmentProgressProps {
   total?: number;
 }
 
-const EnrollmentProgress = ({ enrolled: initialEnrolled = 17, total = 25 }: EnrollmentProgressProps) => {
+const EnrollmentProgress = ({ enrolled: initialEnrolled = 0, total = 25 }: EnrollmentProgressProps) => {
   const [enrolled, setEnrolled] = useState(initialEnrolled);
   const [hasStarted, setHasStarted] = useState(false);
   const { toast } = useToast();
@@ -25,28 +25,36 @@ const EnrollmentProgress = ({ enrolled: initialEnrolled = 17, total = 25 }: Enro
   }, []);
 
   useEffect(() => {
-    if (!hasStarted || enrolled >= total) return;
+    if (!hasStarted || enrolled >= Math.floor(total * 0.92)) return; // Stop at 92% (23 students)
 
-    // Simulate enrollment every 15-45 seconds
-    const enrollmentInterval = setInterval(() => {
-      if (enrolled < total) {
-        setEnrolled(prev => {
-          const newCount = prev + 1;
-          const remaining = total - newCount;
-          
-          // Show toast notification
-          toast({
-            title: "🎉 New Student Enrolled!",
-            description: `Only ${remaining} founding member spots remaining`,
-            duration: 4000,
-          });
-          
-          return newCount;
+    let interval: number;
+    
+    // Phase 1: Rapid enrollment until 70% (17 students)
+    if (enrolled < Math.floor(total * 0.7)) {
+      interval = Math.random() * 3000 + 2000; // 2-5 seconds (rapid)
+    }
+    // Phase 2: Slower enrollment from 70% to 92% (17-23 students)
+    else {
+      interval = Math.random() * 7000 + 8000; // 8-15 seconds (slower)
+    }
+
+    const enrollmentTimer = setTimeout(() => {
+      setEnrolled(prev => {
+        const newCount = prev + 1;
+        const remaining = total - newCount;
+        
+        // Show toast notification
+        toast({
+          title: "🎉 New Student Enrolled!",
+          description: `Only ${remaining} founding member spots remaining`,
+          duration: 4000,
         });
-      }
-    }, Math.random() * 30000 + 15000); // 15-45 seconds
+        
+        return newCount;
+      });
+    }, interval);
 
-    return () => clearInterval(enrollmentInterval);
+    return () => clearTimeout(enrollmentTimer);
   }, [hasStarted, enrolled, total, toast]);
 
   return (
