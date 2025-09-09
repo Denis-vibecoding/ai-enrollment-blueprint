@@ -68,13 +68,13 @@ const CheckoutPage = () => {
           <Button 
             variant="premium" 
             size="lg" 
-            className="text-xl py-6 px-12 bg-white text-primary hover:bg-white/90 shadow-elegant hover-scale font-bold"
+            className="text-xl py-6 px-12 bg-white text-primary hover:bg-white/90 shadow-elegant pulse hover:scale-105 transition-transform duration-200 font-bold"
             onClick={() => {
               const pricingSection = document.querySelector('[data-pricing-section]');
               pricingSection?.scrollIntoView({ behavior: 'smooth', block: 'start' });
             }}
           >
-            ✨ CLAIM YOUR SPOT NOW - ONLY {remaining} LEFT!
+            🚀 CLAIM YOUR SPOT NOW - ONLY {remaining} LEFT!
           </Button>
           
           {/* Money Back Guarantee */}
