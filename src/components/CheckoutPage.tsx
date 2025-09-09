@@ -5,6 +5,7 @@ import { CheckCircle, Shield, Star, ExternalLink } from "lucide-react";
 import EnrollmentProgress from "@/components/EnrollmentProgress";
 import homedesignsLogo from "@/assets/homedesigns-logo.png";
 import guaranteeBadge from "@/assets/guarantee-badge-modern.png";
+import paymentMethods from "@/assets/payment-methods.png";
 import { useState, useEffect } from "react";
 const CheckoutPage = () => {
   const [enrolled, setEnrolled] = useState(0);
@@ -127,6 +128,9 @@ const CheckoutPage = () => {
                   ENROLL NOW
                   <ExternalLink className="w-5 h-5 ml-2" />
                 </Button>
+                <div className="flex justify-center mt-4">
+                  <img src={paymentMethods} alt="Secure Payment Methods" className="h-8 opacity-80" />
+                </div>
               </CardContent>
             </Card>
 
@@ -144,6 +148,9 @@ const CheckoutPage = () => {
                   ENROLL NOW
                   <ExternalLink className="w-5 h-5 ml-2" />
                 </Button>
+                <div className="flex justify-center mt-4">
+                  <img src={paymentMethods} alt="Secure Payment Methods" className="h-8 opacity-80" />
+                </div>
               </CardContent>
             </Card>
           </div>
