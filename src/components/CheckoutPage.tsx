@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { CheckCircle, Shield, Star, ExternalLink } from "lucide-react";
-import CountdownTimer from "@/components/CountdownTimer";
+import EnrollmentProgress from "@/components/EnrollmentProgress";
 import homedesignsLogo from "@/assets/homedesigns-logo.png";
 import guaranteeSeal from "@/assets/guarantee-seal.jpg";
 const CheckoutPage = () => {
@@ -58,7 +58,7 @@ const CheckoutPage = () => {
           </h1>
           <p className="text-xl lg:text-2xl opacity-90 max-w-3xl mx-auto">You're one step away from getting the AI-powered system, the expert coaching, and the tools to land your first high-ticket design client.</p>
           
-          <CountdownTimer />
+          <EnrollmentProgress />
           
           <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-4 max-w-md mx-auto border border-white/20">
             <div className="flex items-center justify-center gap-2 text-sm">
