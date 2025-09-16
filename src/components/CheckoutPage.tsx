@@ -2,7 +2,8 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { CheckCircle, Shield, Star, ExternalLink } from "lucide-react";
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from "@/components/ui/dialog";
+import { CheckCircle, Shield, Star, ExternalLink, AlertCircle } from "lucide-react";
 import EnrollmentProgress from "@/components/EnrollmentProgress";
 import homedesignsLogo from "@/assets/homedesigns-logo.png";
 import guaranteeBadge from "@/assets/guarantee-badge-modern.png";
@@ -11,6 +12,14 @@ const CheckoutPage = () => {
   const [enrolled, setEnrolled] = useState(0);
   const total = 40;
   const remaining = total - enrolled;
+  const [showSeatsFilled, setShowSeatsFilled] = useState(false);
+
+  // Check if seats are filled
+  useEffect(() => {
+    if (enrolled >= total) {
+      setShowSeatsFilled(true);
+    }
+  }, [enrolled, total]);
 
   const handleFastSpringCheckout = (paymentType: 'full' | 'plan') => {
     // FastSpring popup integration
@@ -393,6 +402,34 @@ const CheckoutPage = () => {
             <span>Secured by FastSpring • 30-Day Money-Back Guarantee</span>
           </div>
         </section>
+
+        {/* Seats Filled Modal */}
+        <Dialog open={showSeatsFilled} onOpenChange={setShowSeatsFilled}>
+          <DialogContent className="sm:max-w-md">
+            <DialogHeader>
+              <DialogTitle className="flex items-center gap-2 text-destructive">
+                <AlertCircle className="w-5 h-5" />
+                All Seats Have Been Filled
+              </DialogTitle>
+              <DialogDescription className="text-center space-y-4">
+                <p>
+                  We're sorry, but all 40 academy spots have been filled and enrollment is now closed.
+                </p>
+                <p>
+                  For assistance or to be added to our waitlist for the next cohort, please contact our support team:
+                </p>
+                <div className="bg-muted p-4 rounded-lg">
+                  <p className="font-semibold text-foreground">
+                    📧 help@homedesigns.ai
+                  </p>
+                </div>
+                <p className="text-sm text-muted-foreground">
+                  Our team will respond within 24 hours and help you with next steps.
+                </p>
+              </DialogDescription>
+            </DialogHeader>
+          </DialogContent>
+        </Dialog>
       </div>
     </div>;
 };
