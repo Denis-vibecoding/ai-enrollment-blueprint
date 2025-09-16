@@ -311,61 +311,61 @@ const CheckoutPage = () => {
                     What if I'm already a paying HomeDesigns.AI member?
                   </AccordionTrigger>
                   <AccordionContent className="text-muted-foreground leading-relaxed pt-4">
-                    That's an excellent question, and I have a very special answer for our existing members. When you join the Academy today, our team will do two things for you on the backend: First, we will immediately cancel all of your existing subscriptions. Second, we will calculate the total value of every upgrade you've ever purchased and refund you that full amount in the form of Magic Redesign Credits as our gift to you. It's our way of saying thank you for being an early supporter.
+                    Existing HomeDesigns.AI members receive special treatment when joining the Academy. Upon enrollment, our team will automatically cancel all existing subscriptions and calculate the total value of previous upgrades purchased. This amount will be refunded in the form of Magic Redesign Credits as a thank you for being an early supporter of our platform.
                   </AccordionContent>
                 </AccordionItem>
 
                 <AccordionItem value="item-2" className="border border-border rounded-lg px-6">
                   <AccordionTrigger className="text-left text-lg font-semibold text-primary hover:no-underline">
-                    What if I have no tech skills?
+                    What if I have no technical experience?
                   </AccordionTrigger>
                   <AccordionContent className="text-muted-foreground leading-relaxed pt-4">
-                    This is one of the most common questions I get, and it's a fear that holds a lot of people back. The short answer is: you don't need any. The entire HomeDesigns.AI suite was designed for beginners—the AI does all the complex technical work for you. But more importantly, we've built the perfect solution for this right into the Academy. Remember Sasha, the official Product Lead from HomeDesigns.AI? His entire 30-day coaching track is dedicated to this. He will personally walk you through every single feature, step-by-step, to make sure you're completely confident with the software. We've made it impossible to get left behind by the tech.
+                    No technical skills are required. The HomeDesigns.AI suite was specifically designed for beginners, with AI handling all complex technical processes. Additionally, Sasha, the official Product Lead from HomeDesigns.AI, provides 30 days of dedicated technical coaching. She personally guides students through every feature step-by-step, ensuring complete confidence with the software. The program is structured to ensure no one gets left behind.
                   </AccordionContent>
                 </AccordionItem>
 
                 <AccordionItem value="item-3" className="border border-border rounded-lg px-6">
                   <AccordionTrigger className="text-left text-lg font-semibold text-primary hover:no-underline">
-                    How much time does this take per week?
+                    How much time commitment is required weekly?
                   </AccordionTrigger>
                   <AccordionContent className="text-muted-foreground leading-relaxed pt-4">
-                    That's a very practical question. Look, this isn't a magic button, and it does require you to show up. I recommend setting aside about 5 to 7 hours per week to see real results in your first 30 days. That breaks down to about an hour a day. That will cover attending the live coaching calls and using the Client Acquisition Engine to do your daily outreach. The good news is, because you have the templates and the system, you'll be spending your time on high-value activities that actually get clients, not just spinning your wheels.
+                    To achieve optimal results within the first 30 days, we recommend dedicating 5-7 hours per week, which breaks down to approximately one hour daily. This time covers attendance at live coaching calls and implementation of the Client Acquisition Engine for daily outreach. The structured system and provided templates ensure this time is spent on high-value activities that directly contribute to client acquisition.
                   </AccordionContent>
                 </AccordionItem>
 
                 <AccordionItem value="item-4" className="border border-border rounded-lg px-6">
                   <AccordionTrigger className="text-left text-lg font-semibold text-primary hover:no-underline">
-                    Is this a good time to start with the economy the way it is?
+                    Is this a good time to start with current economic conditions?
                   </AccordionTrigger>
                   <AccordionContent className="text-muted-foreground leading-relaxed pt-4">
-                    That's a very smart question to be asking. It might seem counter-intuitive, but a tough economy is actually the best possible time to be offering this service. Why? Because when the market is slow, realtors and property developers get desperate. They can't afford to have a listing sit for months. They need an edge to make their properties stand out and sell faster. Our AI design service is the ultimate cost-effective solution for them. In a tough market, this isn't a 'nice-to-have'; it becomes an essential marketing tool.
+                    Economic uncertainty actually creates the ideal market conditions for AI design services. When markets slow down, real estate professionals and property developers require competitive advantages to make their listings stand out and sell faster. AI design services become an essential, cost-effective marketing tool rather than a luxury. In challenging markets, properties need every possible edge to succeed.
                   </AccordionContent>
                 </AccordionItem>
 
                 <AccordionItem value="item-5" className="border border-border rounded-lg px-6">
                   <AccordionTrigger className="text-left text-lg font-semibold text-primary hover:no-underline">
-                    Why am I getting Magic Redesign credits if the offer includes 'Unlimited'?
+                    Why are Magic Redesign credits provided if the offer includes 'Unlimited' access?
                   </AccordionTrigger>
                   <AccordionContent className="text-muted-foreground leading-relaxed pt-4">
-                    That's a fantastic and very sharp question. Let me clarify exactly how this works. The 'Unlimited' add-on you get gives you unlimited access to the entire core suite of 20+ AI tools. But Magic Redesign is a brand-new, conversational tool that is incredibly expensive for the HomeDesigns.AI team to run. Honestly, I fought hard to get them to include unlimited access to it in this package, but they showed me the numbers and it's just not doable. Because of that high cost, Magic Redesign has to operate on a separate credit system. As a special webinar-only bonus, the team and I have arranged for every single person who joins the Academy today to receive a 1,000 Credit Starter Pack for Magic Redesign, for free. To put that into perspective, that's more than enough credits for you to land and service your first 50 clients.
+                    The 'Unlimited' designation applies to the core suite of 20+ AI tools within HomeDesigns.AI. However, Magic Redesign is a new conversational AI tool with significantly higher operational costs that requires a separate credit system. As a special enrollment bonus, every Academy member receives a 1,000 Credit Starter Pack for Magic Redesign at no additional cost. This provides sufficient credits to service your first 50+ clients, giving you a substantial head start.
                   </AccordionContent>
                 </AccordionItem>
 
                 <AccordionItem value="item-6" className="border border-border rounded-lg px-6">
                   <AccordionTrigger className="text-left text-lg font-semibold text-primary hover:no-underline">
-                    What happens after the 30-day program ends?
+                    What happens after the 30-day program concludes?
                   </AccordionTrigger>
                   <AccordionContent className="text-muted-foreground leading-relaxed pt-4">
-                    After the intensive 30-day program, you'll have lifetime access to all the software, templates, and resources. You'll also have access to our private Academy community where you can continue getting support from other members. While the daily coaching calls end after 30 days, you'll have all the recordings and materials to reference whenever you need them. Plus, you'll have built the systems and confidence to continue growing your business independently.
+                    Upon completion of the intensive 30-day program, you retain lifetime access to all software, templates, and resources. Access to the private Academy community continues indefinitely, providing ongoing peer support. While daily coaching calls conclude after 30 days, all recordings and materials remain accessible for future reference. By program completion, you'll have established the systems and confidence necessary for independent business growth.
                   </AccordionContent>
                 </AccordionItem>
 
                 <AccordionItem value="item-7" className="border border-border rounded-lg px-6">
                   <AccordionTrigger className="text-left text-lg font-semibold text-primary hover:no-underline">
-                    What if I don't get results in 30 days?
+                    What if I don't achieve results within 30 days?
                   </AccordionTrigger>
                   <AccordionContent className="text-muted-foreground leading-relaxed pt-4">
-                    We stand behind our program 100%. If you join the Academy, attend the coaching calls, implement what you learn, and still don't land your first paying client within 30 days, we'll give you a complete refund. No questions asked. We're this confident because we've seen this system work for hundreds of students already, and we know it will work for you too if you put in the effort.
+                    The Academy is backed by a comprehensive results guarantee. Students who join the program, attend coaching calls, implement the strategies, and still don't secure their first paying client within 30 days are eligible for a complete refund with no questions asked. This guarantee reflects our confidence in the proven system that has already delivered results for hundreds of successful students.
                   </AccordionContent>
                 </AccordionItem>
               </Accordion>
