@@ -305,7 +305,7 @@ const CheckoutPage = () => {
               <Button variant="premium" size="lg" className="text-lg py-4 px-8 bg-white text-primary hover:bg-white/90" onClick={() => handleFastSpringCheckout('full')}>
                 Pay in Full - $997
               </Button>
-              <Button variant="outline" size="lg" className="text-lg py-4 px-8 border-white text-white hover:bg-white/10" onClick={() => handleFastSpringCheckout('plan')}>
+              <Button variant="secondary" size="lg" className="text-lg py-4 px-8 bg-white/20 border-2 border-white text-white hover:bg-white/30 backdrop-blur-sm" onClick={() => handleFastSpringCheckout('plan')}>
                 Payment Plan - $397 x 3
               </Button>
             </div>
