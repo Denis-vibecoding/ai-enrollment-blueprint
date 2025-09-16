@@ -427,7 +427,7 @@ const CheckoutPage = () => {
                   We're sorry, but all 40 academy spots have been filled and enrollment is now closed.
                 </p>
                 <p>
-                  For assistance or to be added to our waitlist for the next cohort, please contact our support team:
+                  To appeal for an exception or to be added to the waitlist for the next cohort, please contact our support team:
                 </p>
                 <div className="bg-muted p-4 rounded-lg">
                   <p className="font-semibold text-foreground">
