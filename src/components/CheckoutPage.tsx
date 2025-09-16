@@ -401,6 +401,17 @@ const CheckoutPage = () => {
             <Shield className="w-5 h-5" />
             <span>Secured by FastSpring • 30-Day Money-Back Guarantee</span>
           </div>
+          
+          {/* Temporary Test Button */}
+          <div className="pt-8 border-t border-border">
+            <Button 
+              variant="outline" 
+              onClick={() => setShowSeatsFilled(true)}
+              className="mx-auto block"
+            >
+              🧪 Test Seats Filled Modal
+            </Button>
+          </div>
         </section>
 
         {/* Seats Filled Modal */}
