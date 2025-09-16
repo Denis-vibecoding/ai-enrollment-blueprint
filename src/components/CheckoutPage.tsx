@@ -109,8 +109,9 @@ const CheckoutPage = () => {
               <CardHeader className="text-center pt-8 pb-6">
                 <CardTitle className="text-2xl text-primary mb-4">One-Time Payment</CardTitle>
                 <div className="space-y-2">
+                  <div className="text-2xl text-muted-foreground line-through">$1,497</div>
                   <div className="text-5xl font-bold text-primary">$997</div>
-                  <div className="text-success text-lg font-semibold">(Save $194)</div>
+                  <div className="text-success text-lg font-semibold">(Save $500)</div>
                 </div>
               </CardHeader>
               <CardContent className="space-y-6">
