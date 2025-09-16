@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { CheckCircle, Shield, Star, ExternalLink } from "lucide-react";
 import EnrollmentProgress from "@/components/EnrollmentProgress";
 import homedesignsLogo from "@/assets/homedesigns-logo.png";
@@ -292,6 +293,82 @@ const CheckoutPage = () => {
                   <div className="font-bold text-primary text-lg">- Michael R., Architecture Firm Owner</div>
                 </div>
               </div>
+            </CardContent>
+          </Card>
+        </section>
+
+        {/* FAQ Section */}
+        <section>
+          <Card className="shadow-card bg-white">
+            <CardHeader className="text-center">
+              <CardTitle className="text-3xl text-primary mb-4">Frequently Asked Questions</CardTitle>
+              <p className="text-muted-foreground">Get answers to common questions about the AI Design Academy</p>
+            </CardHeader>
+            <CardContent>
+              <Accordion type="single" collapsible className="w-full space-y-4">
+                <AccordionItem value="item-1" className="border border-border rounded-lg px-6">
+                  <AccordionTrigger className="text-left text-lg font-semibold text-primary hover:no-underline">
+                    What if I'm already a paying HomeDesigns.AI member?
+                  </AccordionTrigger>
+                  <AccordionContent className="text-muted-foreground leading-relaxed pt-4">
+                    That's an excellent question, and I have a very special answer for our existing members. When you join the Academy today, our team will do two things for you on the backend: First, we will immediately cancel all of your existing subscriptions. Second, we will calculate the total value of every upgrade you've ever purchased and refund you that full amount in the form of Magic Redesign Credits as our gift to you. It's our way of saying thank you for being an early supporter.
+                  </AccordionContent>
+                </AccordionItem>
+
+                <AccordionItem value="item-2" className="border border-border rounded-lg px-6">
+                  <AccordionTrigger className="text-left text-lg font-semibold text-primary hover:no-underline">
+                    What if I have no tech skills?
+                  </AccordionTrigger>
+                  <AccordionContent className="text-muted-foreground leading-relaxed pt-4">
+                    This is one of the most common questions I get, and it's a fear that holds a lot of people back. The short answer is: you don't need any. The entire HomeDesigns.AI suite was designed for beginners—the AI does all the complex technical work for you. But more importantly, we've built the perfect solution for this right into the Academy. Remember Sasha, the official Product Lead from HomeDesigns.AI? His entire 30-day coaching track is dedicated to this. He will personally walk you through every single feature, step-by-step, to make sure you're completely confident with the software. We've made it impossible to get left behind by the tech.
+                  </AccordionContent>
+                </AccordionItem>
+
+                <AccordionItem value="item-3" className="border border-border rounded-lg px-6">
+                  <AccordionTrigger className="text-left text-lg font-semibold text-primary hover:no-underline">
+                    How much time does this take per week?
+                  </AccordionTrigger>
+                  <AccordionContent className="text-muted-foreground leading-relaxed pt-4">
+                    That's a very practical question. Look, this isn't a magic button, and it does require you to show up. I recommend setting aside about 5 to 7 hours per week to see real results in your first 30 days. That breaks down to about an hour a day. That will cover attending the live coaching calls and using the Client Acquisition Engine to do your daily outreach. The good news is, because you have the templates and the system, you'll be spending your time on high-value activities that actually get clients, not just spinning your wheels.
+                  </AccordionContent>
+                </AccordionItem>
+
+                <AccordionItem value="item-4" className="border border-border rounded-lg px-6">
+                  <AccordionTrigger className="text-left text-lg font-semibold text-primary hover:no-underline">
+                    Is this a good time to start with the economy the way it is?
+                  </AccordionTrigger>
+                  <AccordionContent className="text-muted-foreground leading-relaxed pt-4">
+                    That's a very smart question to be asking. It might seem counter-intuitive, but a tough economy is actually the best possible time to be offering this service. Why? Because when the market is slow, realtors and property developers get desperate. They can't afford to have a listing sit for months. They need an edge to make their properties stand out and sell faster. Our AI design service is the ultimate cost-effective solution for them. In a tough market, this isn't a 'nice-to-have'; it becomes an essential marketing tool.
+                  </AccordionContent>
+                </AccordionItem>
+
+                <AccordionItem value="item-5" className="border border-border rounded-lg px-6">
+                  <AccordionTrigger className="text-left text-lg font-semibold text-primary hover:no-underline">
+                    Why am I getting Magic Redesign credits if the offer includes 'Unlimited'?
+                  </AccordionTrigger>
+                  <AccordionContent className="text-muted-foreground leading-relaxed pt-4">
+                    That's a fantastic and very sharp question. Let me clarify exactly how this works. The 'Unlimited' add-on you get gives you unlimited access to the entire core suite of 20+ AI tools. But Magic Redesign is a brand-new, conversational tool that is incredibly expensive for the HomeDesigns.AI team to run. Honestly, I fought hard to get them to include unlimited access to it in this package, but they showed me the numbers and it's just not doable. Because of that high cost, Magic Redesign has to operate on a separate credit system. As a special webinar-only bonus, the team and I have arranged for every single person who joins the Academy today to receive a 1,000 Credit Starter Pack for Magic Redesign, for free. To put that into perspective, that's more than enough credits for you to land and service your first 50 clients.
+                  </AccordionContent>
+                </AccordionItem>
+
+                <AccordionItem value="item-6" className="border border-border rounded-lg px-6">
+                  <AccordionTrigger className="text-left text-lg font-semibold text-primary hover:no-underline">
+                    What happens after the 30-day program ends?
+                  </AccordionTrigger>
+                  <AccordionContent className="text-muted-foreground leading-relaxed pt-4">
+                    After the intensive 30-day program, you'll have lifetime access to all the software, templates, and resources. You'll also have access to our private Academy community where you can continue getting support from other members. While the daily coaching calls end after 30 days, you'll have all the recordings and materials to reference whenever you need them. Plus, you'll have built the systems and confidence to continue growing your business independently.
+                  </AccordionContent>
+                </AccordionItem>
+
+                <AccordionItem value="item-7" className="border border-border rounded-lg px-6">
+                  <AccordionTrigger className="text-left text-lg font-semibold text-primary hover:no-underline">
+                    What if I don't get results in 30 days?
+                  </AccordionTrigger>
+                  <AccordionContent className="text-muted-foreground leading-relaxed pt-4">
+                    We stand behind our program 100%. If you join the Academy, attend the coaching calls, implement what you learn, and still don't land your first paying client within 30 days, we'll give you a complete refund. No questions asked. We're this confident because we've seen this system work for hundreds of students already, and we know it will work for you too if you put in the effort.
+                  </AccordionContent>
+                </AccordionItem>
+              </Accordion>
             </CardContent>
           </Card>
         </section>
